@@ -1,0 +1,36 @@
+.pswp-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+  align-items: baseline;
+}
+
+.pswp__custom-caption {
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 16px;
+  color: #ffffff;
+  width: calc(100% - 32px);
+  max-width: 400px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+}
+.pswp__custom-caption a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.hidden-caption-content {
+  display: none;
+}
+
+.social-icons svg {
+  width: 32px;
+}
+
+body[data-bs-theme="dark"] .social-profile-icon path {
+  fill: #ffffff;
+}
